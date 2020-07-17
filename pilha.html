@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var pilha = {
+			numeros : [],
+			minimo : function num_min(lista) {
+				var menor = lista[0];
+				for (var i = 0; i < lista.length; i++) {
+					if (lista[i] < menor){
+						menor = lista[i];
+					}
+				}
+
+				return menor;
+			}
+		};		
+
+		pilha.numeros.push(543);
+		pilha.numeros.push(34);
+		pilha.numeros.push(7);
+		pilha.numeros.push(22);
+		pilha.numeros.push(12);
+
+		console.log(pilha.minimo(pilha.numeros)); //Mostra o valor minimo da pilha
+	</script>
+
+</body>
+</html>
